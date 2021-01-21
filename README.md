@@ -1,6 +1,6 @@
 ## Development environment for AVR butterfly
 
-This enviroment i based on <https://github.com/Tmplt/atmega169p-devenv> and
+This environment i based on <https://github.com/Tmplt/atmega169p-devenv> and
 modified to accommodate the new lab equipment in D0003E and debugging.
 
 This directory contains all necessary headers and a Makefile to program on the Atmel AVR Butterfly.
@@ -24,6 +24,7 @@ To step through non function calls in the beginning of main you need to set a br
 point at the first line of main. Note that `break main` does not do this.
 
 
+### Dependencies
 The Makefile depends on `avr-gcc`, `avr-objcopy`, `avr-objdump`, `avr-size`, `avrdude`, `avr-gdb`, `avarice`
 and possibly the `avr-libc` headers.
 These can be installed on Arch Linux via the `avr-libc`, `avr-gcc`, `avr-binutils`, `avr-gdb`, `avarice`(AUR) and `avrdude` packages (or via your distro's equivalent).
